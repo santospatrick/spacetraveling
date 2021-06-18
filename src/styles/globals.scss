@@ -6,6 +6,16 @@
 
 :root {
   --white: #fff;
+  --background: #1A1D23;
+  --heading: #f8f8f8;
+  --body: #D7D7D7;
+  --info: #bbbbbb;
+  --highlight: #FF57B2;
+}
+
+body {
+  color: var(--white);
+  background: var(--background);
 }
 
 body, button, input, textarea, select {
@@ -13,6 +23,8 @@ body, button, input, textarea, select {
 }
 
 button {
+  border: none;
+  background: none;
   cursor: pointer;
 }
 
