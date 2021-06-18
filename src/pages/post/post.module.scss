@@ -1,1 +1,32 @@
-// TODO
+.postBanner {
+  margin-bottom: 80px;
+}
+
+.postTitle {
+  color: var(--heading);
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
+}
+
+.postContent {
+  margin-top: 64px;
+}
+
+.postRow {
+  margin-bottom: 64px;
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.postHeading {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--heading);
+  margin-bottom: 56px;
+}

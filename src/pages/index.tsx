@@ -1,6 +1,5 @@
 import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
-import Head from 'next/head';
 import Link from 'next/link';
 
 import { FiCalendar, FiUser } from 'react-icons/fi';
@@ -53,8 +52,8 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
             <a className={styles.postTitle}>{post.data.title}</a>
           </Link>
           <div className={styles.postSubtitle}>{post.data.subtitle}</div>
-          <div className={styles.postFooter}>
-            <div className={styles.postFooterItem}>
+          <div className={commonStyles.postInfo}>
+            <div className={commonStyles.postInfoItem}>
               <FiCalendar />
               <span>
                 {format(parseISO(post.first_publication_date), 'd MMM Y', {
@@ -62,7 +61,7 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
                 })}
               </span>
             </div>
-            <div className={styles.postFooterItem}>
+            <div className={commonStyles.postInfoItem}>
               <FiUser />
               <span>{post.data.author}</span>
             </div>

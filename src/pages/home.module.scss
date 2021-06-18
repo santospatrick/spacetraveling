@@ -19,27 +19,6 @@
   margin-bottom: 24px;
 }
 
-.postFooter {
-  display: flex;
-  align-items: center;
-}
-
-.postFooterItem {
-  display: flex;
-  align-items: center;
-  color: var(--info);
-
-  svg {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-  }
-}
-
-.postFooterItem + .postFooterItem {
-  margin-left: 24px;
-}
-
 .loadMore {
   font-weight: 600;
   font-size: 18px;
